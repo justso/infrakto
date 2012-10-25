@@ -274,7 +274,7 @@
                 move += offset;
                 move = Math.max(parseInt(move, 10), parseInt(maxIE6Move2, 10));
             }
-            return move;
+            return move|0;
         }
         // checkMove( int moveIt )  :  checks to ensure that move amount does not exceed established bounds
         function checkMove(move, vertical, opts, parallaxRoom, tooSmallMode) {

@@ -9,16 +9,17 @@ body {
     background-position: top center;
     overflow-x: hidden;
 }
-* {
-    -webkit-transition: all 1s ease-out -0.7s;
+.smooth * {
+    border: 1px solid red;
+    x-webkit-transition: all 1s ease-out -0.7s;
 }
 h1 {
     color: #FFFFFF;
     position: absolute;
-    text-indent: 999999px;
     top: -9999px;
 }
-a:hover {
+a {
+    color: transparent !important;
     cursor: pointer;
 }
 /*--------------------------------------*/
@@ -32,7 +33,7 @@ a:hover {
 }
 /*--------------NAVBAR------------------*/
 .navbar {
-    background: url("../images/menu/menu01.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/menu/menu-a.png") no-repeat scroll 0 0 transparent;
     height: 445px;
     left: 0;
     position: fixed;
@@ -41,15 +42,14 @@ a:hover {
     z-index: 500;
 }
 .navbar * {
-    background: url("../images/menu/menu02.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/menu/menu-b.png") no-repeat scroll 0 0 transparent;
     left: 0;
     position: fixed;
-    text-indent: -999999px;
     width: 40px;
     z-index: 500;
 }
 .navbar_back {
-    background: url("../images/menu/menu03.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/menu/menu-c.png") no-repeat scroll 0 0 transparent;
     height: 445px;
     top: 477px;
     z-index: 498;
@@ -152,15 +152,16 @@ a:hover {
 }
 /*-------------- SHIP ------------------*/
 .ship {
-    background: url("../images/ship/ship.png") no-repeat scroll 840px 0 transparent;
+    background: url("../images/ship/ship.png") no-repeat scroll 860px 0 transparent;
     height: 327px;
     position: fixed;
     top: 120px;
     width: 1920px;
     z-index: 60;
+    -webkit-transition: none;
 }
 .ship-packed {
-    background: url("../images/ship/ship-packed.png") no-repeat scroll 843px 0 transparent;
+    background: url("../images/ship/ship-packed.png") no-repeat scroll 860px 0 transparent;
     display: none;
     height: 327px;
     position: fixed;
@@ -169,7 +170,7 @@ a:hover {
     z-index: 60;
 }
 .ship_fire {
-    background: url("../images/ship/fire.gif") no-repeat scroll 896px 0 transparent;
+    background: url("../images/ship/fire.gif") no-repeat scroll 913px 0 transparent;
     height: 50px;
     position: fixed;
     top: 415px;
@@ -232,47 +233,48 @@ a:hover {
     text-indent: -9999px;
     width: 116px;
     z-index: 50;
+    -webkit-transition: none;
 }
 .launcher:hover {
     background: url("../images/btn_start.png") no-repeat scroll 0 -115px transparent;
 }
-.cloud_1 {
-    background: url("../images/stage01/cloud1.png") no-repeat scroll 350px 0 transparent;
-    height: 60px;
+.cloud-1 {
+    background: url("../images/stage01/cloud-1.png") no-repeat scroll 350px 0 transparent;
+    height: 100px;
     position: fixed;
     top: 7550px;
     width: 1920px;
     z-index: 51;
 }
-.cloud_2 {
-    background: url("../images/stage01/cloud2.png") no-repeat scroll 1256px 0 transparent;
-    height: 64px;
+.cloud-2 {
+    background: url("../images/stage01/cloud-2.png") no-repeat scroll 1256px 0 transparent;
+    height: 100px;
     position: fixed;
     top: 6975px;
     width: 1920px;
     z-index: 61;
 }
-.cloud_4 {
-    background: url("../images/stage01/cloud4.png") no-repeat scroll 1420px 0 transparent;
-    height: 60px;
+.cloud-3 {
+    background: url("../images/stage01/cloud-3.png") no-repeat scroll 750px 0 transparent;
+    height: 120px;
+    position: fixed;
+    top: 7010px;
+    width: 1920px;
+    z-index: 61;
+}
+.cloud-4 {
+    background: url("../images/stage01/cloud-4.png") no-repeat scroll 1420px 0 transparent;
+    height: 100px;
     position: fixed;
     top: 7210px;
     width: 1920px;
     z-index: 51;
 }
-.cloud_5 {
-    background: url("../images/stage01/cloud5.png") no-repeat scroll 330px 0 transparent;
-    height: 66px;
+.cloud-5 {
+    background: url("../images/stage01/cloud-5.png") no-repeat scroll 330px 0 transparent;
+    height: 100px;
     position: fixed;
     top: 6980px;
-    width: 1920px;
-    z-index: 61;
-}
-.cloud_3 {
-    background: url("../images/stage01/cloud3.png") no-repeat scroll 750px 0 transparent;
-    height: 90px;
-    position: fixed;
-    top: 7010px;
     width: 1920px;
     z-index: 61;
 }
@@ -280,10 +282,9 @@ a:hover {
 .banner_2 {
     background: url("../images/bkgr/banner.png") no-repeat scroll 0 0 transparent;
     height: 400px;
-    margin: 0 -22px;
     position: fixed;
     top: 11080px;
-    width: 1935px;
+    width: 1920px;
     z-index: 70;
 }
 .wiki_img {
@@ -311,16 +312,16 @@ a:hover {
     width: 1920px;
     z-index: 70;
 }
-.satellite_1 {
-    background: url("../images/stage03/satellite03.png") no-repeat scroll 1260px -100px transparent;
+.satellite-c {
+    background: url("../images/stage03/satellite-c.png") no-repeat scroll 1260px -100px transparent;
     height: 174px;
     position: fixed;
     top: 2950px;
     width: 1920px;
     z-index: 50;
 }
-.rays_1 {
-    background: url("../images/stage03/rays03.png") no-repeat scroll 1150px 0 transparent;
+.ray-c {
+    background: url("../images/stage03/ray-c.png") no-repeat scroll 1150px 0 transparent;
     height: 186px;
     position: fixed;
     top: 3050px;
@@ -328,16 +329,16 @@ a:hover {
     z-index: 50;
     display: none;
 }
-.satellite_2 {
-    background: url("../images/stage03/satellite02.png") no-repeat scroll 400px 0 transparent;
+.satellite-b {
+    background: url("../images/stage03/satellite-b.png") no-repeat scroll 400px 0 transparent;
     height: 146px;
     position: fixed;
     top: 3220px;
     width: 1920px;
     z-index: 50;
 }
-.rays_2 {
-    background: url("../images/stage03/rays02.png") no-repeat scroll 610px 0 transparent;
+.ray-b {
+    background: url("../images/stage03/ray-b.png") no-repeat scroll 610px 0 transparent;
     height: 201px;
     position: fixed;
     top: 3300px;
@@ -345,16 +346,16 @@ a:hover {
     z-index: 50;
     display: none;
 }
-.satellite_3 {
-    background: url("../images/stage03/satellite01.png") no-repeat scroll 430px 100px transparent;
+.satellite-a {
+    background: url("../images/stage03/satellite-a.png") no-repeat scroll 430px 100px transparent;
     height: 175px;
     position: fixed;
     top: 2950px;
     width: 1920px;
     z-index: 50;
 }
-.rays_3 {
-    background: url("../images/stage03/rays01.png") no-repeat scroll 540px 100px transparent;
+.ray-a {
+    background: url("../images/stage03/ray-a.png") no-repeat scroll 540px 100px transparent;
     height: 375px;
     position: fixed;
     top: 2770px;
@@ -362,7 +363,7 @@ a:hover {
     z-index: 50;
     display: none;
 }
-.stars_stage_3_a {
+.s3_stars-3_a {
     background: url("../images/stage03/star-a.png") no-repeat scroll 1275px 0 transparent;
     height: 20px;
     position: fixed;
@@ -370,7 +371,7 @@ a:hover {
     width: 1920px;
     z-index: 49;
 }
-.stars_stage_3_b {
+.s3_stars-3_b {
     background: url("../images/stage03/star-b.png") no-repeat scroll 650px 0 transparent;
     height: 20px;
     position: fixed;
@@ -378,7 +379,7 @@ a:hover {
     width: 1920px;
     z-index: 49;
 }
-.stars_stage_3_c {
+.s3_stars-3_c {
     background: url("../images/stage03/star-c.png") no-repeat scroll 500px 0 transparent;
     height: 20px;
     position: fixed;
@@ -394,7 +395,6 @@ a:hover {
     top: 7080px;
     width: 1920px;
     z-index: 70;
-    margin: 0 -5px;
 }
 .gmail {
     background: url("../images/stage04/gmail.png") no-repeat scroll 0 0 transparent;
@@ -452,7 +452,6 @@ a:hover {
     top: 5680px;
     width: 1920px;
     z-index: 70;
-    margin: 0 -5px;
 }
 .facebook {
     background: url("../images/stage05/facebook.png") no-repeat scroll 10px 0 transparent;
@@ -462,24 +461,24 @@ a:hover {
     width: 1920px;
     z-index: 60;
 }
-.twitter01 {
-    background: url("../images/stage05/twitter01.png") no-repeat scroll 1230px 0 transparent;
+.twitter-a {
+    background: url("../images/stage05/twitter-a.png") no-repeat scroll 1230px 0 transparent;
     height: 214px;
     position: fixed;
     top: 4100px;
     width: 1920px;
     z-index: 60;
 }
-.twitter02 {
-    background: url("../images/stage05/twitter02.png") no-repeat scroll 1230px 0 transparent;
+.twitter-b {
+    background: url("../images/stage05/twitter-b.png") no-repeat scroll 1230px 0 transparent;
     height: 187px;
     position: fixed;
     top: 3400px;
     width: 1920px;
     z-index: 60;
 }
-.twitter03 {
-    background: url("../images/stage05/twitter03.png") no-repeat scroll 1230px 0 transparent;
+.twitter-c {
+    background: url("../images/stage05/twitter-c.png") no-repeat scroll 1230px 0 transparent;
     height: 187px;
     position: fixed;
     top: 3600px;
@@ -519,11 +518,10 @@ a:hover {
     top: 3740px;
     width: 1920px;
     z-index: 70;
-    margin: 0 -5px;
 }
 /* */
-.platform_1_a {
-    background: url("../images/stage06/platform_1.png") no-repeat scroll 576px 0 transparent;
+.device-1_a {
+    background: url("../images/stage06/device-1.png") no-repeat scroll 576px 0 transparent;
     height: 347px;
     overflow: hidden;
     position: absolute;
@@ -531,7 +529,7 @@ a:hover {
     width: 1920px;
     z-index: 65;
 }
-.platform_1_b {
+.device-1_b {
     height: 200px;
     overflow: hidden;
     position: relative;
@@ -548,8 +546,8 @@ a:hover {
     z-index: 65;
 }
 /* */
-.platform_2_a {
-    background: url("../images/stage06/platform_2.png") no-repeat scroll 1116px 0 transparent;
+.device-2_a {
+    background: url("../images/stage06/device-2.png") no-repeat scroll 1116px 0 transparent;
     height: 645px;
     overflow: hidden;
     position: absolute;
@@ -557,7 +555,7 @@ a:hover {
     width: 1920px;
     z-index: 69;
 }
-.platform_2_b {
+.device-2_b {
     height: 343px;
     overflow: hidden;
     position: absolute;
@@ -574,15 +572,15 @@ a:hover {
     z-index: 65;
 }
 /* */
-.platform_3_a {
-    background: url("../images/stage06/platform_3.png") no-repeat scroll 1114px 0 transparent;
+.device-3_a {
+    background: url("../images/stage06/device-3.png") no-repeat scroll 1114px 0 transparent;
     height: 262px;
     position: absolute;
     top: 2440px;
     width: 1920px;
     z-index: 69;
 }
-.platform_3_b {
+.device-3_b {
     height: 126px;
     overflow: hidden;
     position: absolute;
@@ -599,8 +597,8 @@ a:hover {
     z-index: 65;
 }
 /* */
-.platform_4_a {
-    background: url("../images/stage06/platform_4.png") no-repeat scroll 435px 0 transparent;
+.device-4_a {
+    background: url("../images/stage06/device-4.png") no-repeat scroll 435px 0 transparent;
     height: 443px;
     position: absolute;
     top: 2050px;
@@ -608,7 +606,7 @@ a:hover {
     z-index: 59;
     overflow: hidden;
 }
-.platform_4_b {
+.device-4_b {
     height: 251px;
     overflow: hidden;
     position: absolute;
@@ -625,7 +623,7 @@ a:hover {
     z-index: 65;
 }
 /*---------------STAGE 7----------------*/
-.platform_final {
+.device-final {
     background: url("../images/stage07/platform.png") no-repeat scroll 0 0 transparent;
     height: 1368px;
     position: absolute;
@@ -633,7 +631,7 @@ a:hover {
     width: 1926px;
     z-index: 71;
 }
-.plat_7_stars_1 {
+.s7_stars-1 {
     background: url("../images/stage07/stars-1.png") no-repeat scroll 161px 0 transparent;
     height: 295px;
     position: fixed;
@@ -641,7 +639,7 @@ a:hover {
     width: 1920px;
     z-index: 60;
 }
-.plat_7_stars_2 {
+.s7_stars-2 {
     background: url("../images/stage07/stars-2.png") no-repeat scroll 170px 0 transparent;
     height: 295px;
     position: fixed;
@@ -649,7 +647,7 @@ a:hover {
     width: 1920px;
     z-index: 60;
 }
-.plat_7_stars_3 {
+.s7_stars-3 {
     background: url("../images/stage07/stars-3.png") no-repeat scroll 200px 0 transparent;
     height: 295px;
     position: fixed;
@@ -657,23 +655,23 @@ a:hover {
     width: 1920px;
     z-index: 60;
 }
-.plat_7_facebook {
-    background: url("../images/stage07/facebook.png") no-repeat scroll 1297px 0 transparent;
+.s7_moon-1 {
+    background: url("../images/stage07/moon-1.png") no-repeat scroll 1297px 0 transparent;
     height: 81px;
     position: fixed;
     top: 85px;
     width: 1920px;
     z-index: 70;
 }
-.plat_7_twitter {
-    background: url("../images/stage07/twitter.png") no-repeat scroll 1265px 0 transparent;
+.s7_moon-2 {
+    background: url("../images/stage07/moon-2.png") no-repeat scroll 1265px 0 transparent;
     height: 81px;
     position: fixed;
     top: 140px;
     width: 1920px;
     z-index: 70;
 }
-.plat_7_stars {
+.s7_stars {
     background: url("../images/stage07/stars-0.png") no-repeat scroll 0 0 transparent;
     height: 459px;
     position: absolute;
@@ -692,7 +690,6 @@ a:hover {
 a.intacto_url_link {
     color: #799B00;
     text-decoration: none;
-    text-indent: 99999px;
 }
 /*---------------LOADER------------------*/
 .QOverlay {

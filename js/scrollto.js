@@ -27,21 +27,21 @@
                 return elem;
             }
             doc = (elem.contentWindow || elem).document || elem.ownerDocument || elem;
-            return $.browser.safari || doc.compatMode == 'BackCompat' ? doc.body : doc.documentElement;
+            return $.browser.safari || doc.compatMode === 'BackCompat' ? doc.body : doc.documentElement;
         });
     };
 
     $.fn.scrollTo = function (target, duration, settings) {
-        if (typeof duration == 'object') {
+        if (typeof duration === 'object') {
             settings = duration;
             duration = 0;
         }
-        if (typeof settings == 'function') {
+        if (typeof settings === 'function') {
             settings = {
                 onAfter: settings
             };
         }
-        if (target == 'max') {
+        if (target === 'max') {
             target = 9e9;
         }
         settings = $.extend({}, $scrollTo.defaults, settings);
@@ -83,7 +83,7 @@
                     break;
             }
             $.each(settings.axis.split(''), function (i, axis) {
-                var Pos = axis == 'x' ? 'Left' : 'Top'
+                var Pos = axis === 'x' ? 'Left' : 'Top'
                 ,   pos = Pos.toLowerCase()
                 ,   key = 'scroll' + Pos
                 ,   old = elem[key]
@@ -103,12 +103,12 @@
 
                     if (settings.over[pos]) {
                         // Scroll to a fraction of its width/height
-                        attr[key] += targ[axis == 'x' ? 'width' : 'height']() * settings.over[pos];
+                        attr[key] += targ[axis === 'x' ? 'width' : 'height']() * settings.over[pos];
                     }
                 } else {
                     val = targ[pos];
                     // Handle percentage values
-                    attr[key] = val.slice && val.slice(-1) == '%' ? parseFloat(val) / 100 * max : val;
+                    attr[key] = val.slice && val.slice(-1) === '%' ? parseFloat(val) / 100 * max : val;
                 }
 
                 // Number or 'number'
@@ -141,7 +141,7 @@
     // Max scrolling position, works on quirks mode
     // It only fails (not too badly) on IE, quirks mode.
     $scrollTo.max = function (elem, axis) {
-        var Dim = (axis == 'x' ? 'Width' : 'Height')
+        var Dim = (axis === 'x' ? 'Width' : 'Height')
         ,   scroll = 'scroll' + Dim
         ,   size, html, body
         ;
@@ -156,7 +156,7 @@
     };
 
     function both(val) {
-        return typeof val == 'object' ? val : {
+        return typeof val === 'object' ? val : {
             top: val,
             left: val
         };
