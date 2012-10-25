@@ -1,0 +1,44 @@
+@charset "utf-8";
+html {
+    zborder: 100px solid rgba(0,0,0,0.05);
+    font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
+}
+body {
+    background: url("../images/back-horz.jpg") no-repeat scroll left center #000;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.container {
+    height: 1130px;
+    left: -10px;
+    margin-top: -955px;
+    position: absolute;
+    top: 50%;
+    width: 11921px;
+}
+/* ---- ---- */
+.vport {
+    color: yellow;
+    font-family: monospace;
+    left: 20px;
+    position: fixed;
+    top: 20px;
+    width: 99px;
+    z-index: 999;
+}
+/* ---- ---- */
+.smooth * {
+    -webkit-transition: all 1s ease-out -0.7s;
+    -moz-transition: all 1s ease-out -0.7s;
+    transition: all 1s ease-out -0.7s;
+}
+html.birdsi body {
+    -webkit-transform: scale(0.5);
+}
+div.grit-sm {
+    background-color: rgba(220,220,0,0.2);
+}
+div.grit-lg {
+    background-color: rgba(0,0,220,0.2);
+}
+/* ---- ---- */

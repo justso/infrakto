@@ -1,120 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html class="cocked">
     <head>
-        <title>inTacto 10 Years</title>
+        <title>INFRACTO</title>
         <meta http-equiv="X-UA-Compatible" content="IE=8">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <!--// FRONTEND JQUERY //-->
-        <script type="text/javascript" src="/lib/jquery/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/load.js"></script>
-        <script type="text/javascript" src="js/scrollto.js"></script>
-        <script type="text/javascript" src="js/parallax.js"></script>
-        <script type="text/javascript" src="js/control_coords.js"></script>
+        <link rel="stylesheet" href="css/basis.css">
+        <link disabled id="fandy" rel="stylesheet" href="fandy/style.css">
+        <script src="/lib/jquery/jquery-1.7.2.min.js"></script>
+        <script src="js/plax.js"></script>
+        <script src="js/cords.js"></script>
     </head>
-    <body class="smooth">
-        <div class="container">
-            <h1>steps</h1>
-            <!--// NAVBAR //-->
-            <div class="navbar">
-                <div class="navbar_back"></div>
-                <a class="step-12" title="12">12</a>
-                <a class="step-11" title="11">11</a>
-                <a class="step-10" title="10">10</a>
-                <a class="step-09" title="09">09</a>
-                <a class="step-08" title="08">08</a>
-                <a class="step-07" title="07">07</a>
-                <a class="step-06" title="06">06</a>
-                <a class="step-05" title="05">05</a>
-                <a class="step-04" title="04">04</a>
-                <a class="step-03" title="03">03</a>
-                <a class="step-02" title="02">02</a>
-                <a class="step-01" title="01">01</a>
-            </div>
-            <div class="years"></div>
-            <div class="line_years"></div>
-            <div class="stars-sm"></div>
-            <div class="stars-lg"></div>
-            <!--// STAGE 7 //-->
-            <div class="device-final"></div>
-            <div class="s7_stars-1"></div>
-            <div class="s7_stars-2"></div>
-            <div class="s7_stars-3"></div>
-			<div class="s7_moon-1"></div>
-			<div class="s7_moon-2"></div>
-            <div class="s7_stars"></div>
-            <a class="intacto_url_link" href="http://www.intacto.com/" target="_blank" title="www.intacto.com">www.intacto.com</a>
-            <!--// STAGE 6 //-->
-            <div class="banner_6"></div>
-
-            <div class="device-1_a"></div>
-            <div class="device-1_b">
-                <div class="ship-sm_mirror_1"></div>
-            </div>
-            <div class="device-2_a"></div>
-            <div class="device-2_b">
-                <div class="ship-lg_mirror_2"></div>
-            </div>
-            <div class="device-3_a"></div>
-            <div class="device-3_b">
-                <div class="ship-sm_mirror_3"></div>
-            </div>
-            <div class="device-4_a"></div>
-            <div class="device-4_b">
-                <div class="ship-lg_mirror_4"></div>
-            </div>
-            <!--// STAGE 5 //-->
-            <div class="banner_5"></div>
-            <div class="facebook"></div>
-            <div class="twitter-a"></div>
-            <div class="twitter-b"></div>
-            <div class="twitter-c"></div>
-            <div class="probe-r"></div>
-            <div class="probe-l"></div>
-            <div class="probe-l_2"></div>
-            <!--// STAGE 4 //-->
-            <div class="banner_4"></div>
-            <div class="gmail"></div>
-            <div class="youtube"></div>
-            <div class="ship_pack_upper_left"></div>
-            <div class="ship_pack_bottom_left"></div>
-            <div class="ship_pack_upper_right"></div>
-            <div class="ship_pack_bottom_right"></div>
-            <!--// STAGE 3 //-->
-            <div class="satellite-c"></div>
-            <div class="ray-c"></div>
-            <div class="satellite-b"></div>
-            <div class="ray-b"></div>
-            <div class="satellite-a"></div>
-            <div class="banner_3"></div>
-            <div class="ray-a"></div>
-            <div class="s3_stars-3_a"></div>
-            <div class="s3_stars-3_b"></div>
-            <div class="s3_stars-3_c"></div>
-            <!--// STAGE 2 //-->
-            <div class="banner_2"></div>
-            <div class="wiki_img"></div>
-            <div class="myspace"></div>
-            <!--// STAGE 1 //-->
-            <div class="base_launch"></div>
-            <div class="bay-left"></div>
-            <div class="baydoor-left"></div>
-            <div class="bay-right"></div>
-            <div class="baydoor-right"></div>
-            <div class="cloud-1"></div>
-            <div class="cloud-2"></div>
-            <div class="cloud-3"></div>
-            <div class="cloud-4"></div>
-            <div class="cloud-5"></div>
-            <a class="launcher" href="javascript:void(0)">Launch</a>
-            <!--// SHIP //-->
-            <div class="ship"></div>
-            <div class="ship-packed"></div>
-            <div class="ship_fire"></div>
+    <body>
+        <div class="vport">
+            <label>infrakto <input type="checkbox" id="fandyTog"></input></label>
+            <label>momentum <input type="checkbox" id="momenTog"></input></label>
+            <!-- <label>birdseye <input type="checkbox" id="birdsTog"></input></label> -->
+            <!--  <label>cockeyed <input type="checkbox" id="cockeTog" checked></input></label>-->
+            <hr>
+            <div class="log"></div>
         </div>
-        <script type="text/javascript">
-            QueryLoader.selectorPreload = "body","div";
-            QueryLoader.init();
-        </script>
+        <div class="container">
+            <!-- <section> -->
+                <div class="years"></div>
+                <div class="line_years"></div>
+                <div class="grit-sm"></div>
+                <div class="grit-lg"></div>
+            <!--</section>
+            // HERO //
+            <section>-->
+                <div class="hero-main"></div>
+                <div class="hero-packed"></div>
+                <div class="hero-drive"></div>
+                <div class="hero-drive2"></div>
+            <!-- </section><section class="s7"> -->
+                <div class="s7_final"></div>
+                <div class="s7_fill-1"></div>
+                <div class="s7_fill-2"></div>
+                <div class="s7_fill-3"></div>
+                <div class="s7_obj-1"></div>
+                <div class="s7_obj-2"></div>
+                <div class="s7_fill-0"></div>
+            <!-- </section><section class="s6"> -->
+                <div class="stage s6"></div>
+                <div class="s6_obj-1_main"></div>
+                <div class="s6_obj-1_mask"><div class="flct"></div></div>
+                <div class="s6_obj-2_main"></div>
+                <div class="s6_obj-2_mask"><div class="flct"></div></div>
+                <div class="s6_obj-3_main"></div>
+                <div class="s6_obj-3_mask"><div class="flct"></div></div>
+                <div class="s6_obj-4_main"></div>
+                <div class="s6_obj-4_mask"><div class="flct"></div></div>
+            <!-- </section><section class="s5"> -->
+                <div class="stage s5"></div>
+                <div class="s5_obj-1"></div>
+                <div class="s5_obj-2-a"></div>
+                <div class="s5_obj-2-b"></div>
+                <div class="s5_obj-2-c"></div>
+                <div class="s5_probe-1"></div>
+                <div class="s5_probe-2"></div>
+                <div class="s5_probe-2_stay"></div>
+            <!-- </section><section class="s4"> -->
+                <div class="stage s4"></div>
+                <div class="s4_obj-1"></div>
+                <div class="s4_obj-2"></div>
+                <div class="s4_pack_NW"></div>
+                <div class="s4_pack_SW"></div>
+                <div class="s4_pack_NE"></div>
+                <div class="s4_pack_SE"></div>
+            <!-- </section><section class="s3"> -->
+                <div class="stage s3"></div>
+                <div class="s3_spawn-c"></div>
+                <div class="s3_emit-c"></div>
+                <div class="s3_spawn-b"></div>
+                <div class="s3_emit-b"></div>
+                <div class="s3_spawn-a"></div>
+                <div class="s3_emit-a"></div>
+                <div class="s3_spec-a"></div>
+                <div class="s3_spec-b"></div>
+                <div class="s3_spec-c"></div>
+            <!-- </section><section class="s2"> -->
+                <div class="stage s2"></div>
+                <div class="s2_obj-1"></div>
+                <div class="s2_obj-2"></div>
+            <!-- </section><section class="s1"> -->
+                <div class="s1_obj-1"></div>
+                <div class="s1_obj-2"></div>
+                <div class="s1_obj-3"></div>
+                <div class="s1_obj-4"></div>
+                <div class="s1_obj-5"></div>
+            <!-- </section><section> -->
+                <div class="s0_base"></div>
+                <div class="s0_bay-1"></div>
+                <div class="s0_door-1"></div>
+                <div class="s0_bay-2"></div>
+                <div class="s0_door-2"></div>
+                <a class="s0_go" onclick="makeRocketGoNow()"> </a>
+            <!-- </section> -->
+        </div>
+        <script src="js/glob.js"></script>
     </body>
 </html>

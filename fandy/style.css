@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* ---- ---- */
+* {
+    border: 0 !important;
+}
+body {
+    background-image: url("bkgr/backSpace.jpg");
+}
+.container * {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+.vport {
+    display: none;
+}
+div.years {
+    background-image: url("bkgr/years.png");
+    height: 137px;
+    left: 35%;
+    position: absolute;
+    top: 1475px;
+    width: 6426px;
+    z-index: 45;
+}
+div.line_years {
+    background-image: url("bkgr/line_years.png");
+    height: 6457px;
+    left: 0;
+    position: absolute;
+    top: 1446px;
+    width: 1920px;
+    z-index: 40;
+}
+div.grit-sm{background-image:url("bkgr/stars-sm.png");}
+div.grit-lg{background-image:url("bkgr/stars-lg.png");}
+/* ---- FORE ---- */
+a.s0_go {
+    background-image: url("btn_start.png");
+}
+div.hero-main {
+    background-image: url("ship/ship.png");
+    background-position: center center;
+    height: 327px;
+    top: 350px;
+}
+div.hero-packed {
+    background-image: url("ship/ship-packed.png");
+    background-position: center center;
+    height: 327px;
+    top: 350px;
+}
+div.hero-drive {
+    background-image: url("ship/fire.gif");
+    background-position: center center;
+    height: 75px;
+    top: 475px;
+    left: 600px;
+}
+div.hero-drive2 {
+    display: none !important;
+}
+/*
+---- STAGE 0 ----
+*/
+div.s0_base{background-image:url("stage00/base.png");}
+div.s0_bay-1{background-image:url("stage00/bay-l.png");}
+div.s0_door-1{background-image:url("stage00/baydoor-l.png");}
+div.s0_bay-2{background-image:url("stage00/bay-r.png");}
+div.s0_door-2{background-image:url("stage00/baydoor-r.png");}
+/*
+---- STAGE 1 ----
+*/
+div.s1_obj-1{background-image:url("stage01/cloud-1.png");}
+div.s1_obj-2{background-image:url("stage01/cloud-2.png");}
+div.s1_obj-3{background-image:url("stage01/cloud-3.png");}
+div.s1_obj-4{background-image:url("stage01/cloud-4.png");}
+div.s1_obj-5{background-image:url("stage01/cloud-5.png");}
+/*
+---- STAGE 2 ----
+*/
+div.s2{background-image:url("bkgr/banner.png");}
+div.s2_obj-1{background-image:url("stage02/myspace.png");}
+div.s2_obj-2{background-image:url("stage02/wiki.png");}
+/*
+---- STAGE 3 ----
+*/
+div.s3{background-image:url("bkgr/banner.png");}
+div.s3_spawn-a{background-image:url("stage03/satellite-a.png");}
+div.s3_spawn-b{background-image:url("stage03/satellite-b.png");}
+div.s3_spawn-c{background-image:url("stage03/satellite-c.png");}
+div.s3_emit-a{background-image:url("stage03/ray-a.png");}
+div.s3_emit-b{background-image:url("stage03/ray-b.png");}
+div.s3_emit-c{background-image:url("stage03/ray-c.png");}
+div.s3_spec-a{background-image:url("stage03/star-a.png");}
+div.s3_spec-b{background-image:url("stage03/star-b.png");}
+div.s3_spec-c{background-image:url("stage03/star-c.png");}
+/*
+---- STAGE 4 ----
+*/
+div.s4{background-image:url("bkgr/banner.png");}
+div.s4_obj-1{background-image:url("stage04/gmail.png");}
+div.s4_obj-2{background-image:url("stage04/youtube.png");}
+div.s4_pack_NW{background-image:url("ship/ship_pack-nw.png");}
+div.s4_pack_NE{background-image:url("ship/ship_pack-ne.png");}
+div.s4_pack_SW{background-image:url("ship/ship_pack-sw.png");}
+div.s4_pack_SE{background-image:url("ship/ship_pack-se.png");}
+/*
+---- STAGE 5 ----
+*/
+div.s5{background-image:url("bkgr/banner.png");}
+div.s5_obj-1{background-image:url("stage05/facebook.png");}
+div.s5_obj-2-a{background-image:url("stage05/twitter-a.png");}
+div.s5_obj-2-b{background-image:url("stage05/twitter-b.png");}
+div.s5_obj-2-c{background-image:url("stage05/twitter-c.png");}
+div.s5_probe-1{background-image:url("stage05/probe-l.png");}
+div.s5_probe-2{background-image:url("stage05/probe-r.png");}
+div.s5_probe-2_stay{background-image:url("stage05/probe-r.png");}
+/*
+---- STAGE 6 ----
+*/
+div.s6{background-image:url("bkgr/banner.png");}
+div.s6_obj-1_main{background-image:url("stage06/device-1.png");}
+div.s6_obj-1_mask .flct{background-image:url("ship/ship-sm_mirror.png");}
+div.s6_obj-2_main{background-image:url("stage06/device-2.png");}
+div.s6_obj-2_mask .flct{background-image:url("ship/ship-lg_mirror.png");}
+div.s6_obj-3_main{background-image:url("stage06/device-3.png");}
+div.s6_obj-3_mask .flct{background-image:url("ship/ship-sm_mirror.png");}
+div.s6_obj-4_main{background-image:url("stage06/device-4.png");}
+div.s6_obj-4_mask .flct{background-image:url("ship/ship-lg_mirror.png");}
+/*
+---- STAGE 7 ----
+*/
+div.s7_final{background-image:url("stage07/platform.png");}
+div.s7_fill-0{background-image:url("stage07/stars-0.png");}
+div.s7_fill-1{background-image:url("stage07/stars-1.png");}
+div.s7_fill-2{background-image:url("stage07/stars-2.png");}
+div.s7_fill-3{background-image:url("stage07/stars-3.png");}
+div.s7_obj-1{background-image:url("stage07/moon-1.png");}
+div.s7_obj-2{background-image:url("stage07/moon-2.png");}
+/* ---- ---- */
