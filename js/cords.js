@@ -76,7 +76,7 @@ $(function () {
             $(DRIVES).show();
             $('.hero-main').css({
                 'position': 'fixed',
-                'left': '333px',
+//                'left': '333px',
                 'top': '',
             });
         } else {

@@ -52,32 +52,20 @@ a.s0_go {
     transition: none;
 }
 div.hero-main, div.hero-packed {
-    background-position: 0 442px;
     display: none;
     width: 327px;
     z-index: 64;
-    left: 333px;
+    left: 40%;
+    top: 40%
 }
-div.hero-main {
-    background-image: url("../images/hero.png");
+div.hero-main, div.hero-packed {
+    background-image: url("../images/hero.gif");
 }
-div.hero-packed {
-    background-image: url("../images/hero.png");
-}
-div.hero-drive, div.hero-drive2 {
+div.hero-drive {
     background-position: -10px 477px;
     display: none;
     width: 55px;
-    z-index: 65;
-}
-div.hero-drive {
-    background-image: url("../images/drive-r.gif");
-    left: 605px;
-}
-div.hero-drive2 {
-    background-position: 0 477px;
-    background-image: url("../images/drive-l.gif");
-    left: 320px;
+    z-index: 63;
 }
 /*
     ---- BASE ----
